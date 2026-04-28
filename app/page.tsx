@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import FeaturedProjects from "@/components/FeaturedProjects";
+import Blogs from "@/components/Blogs";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import ChatWidget from "@/components/ChatWidget";
@@ -14,9 +15,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <Skills />
       <Experience />
       <FeaturedProjects />
+      <Blogs />
+      <Skills />
       <Education />
       <Contact />
       <ChatWidget />

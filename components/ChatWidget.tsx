@@ -1,8 +1,49 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, ReactNode } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle, X, Send, Loader2, Bot, User } from "lucide-react";
+
+function renderInline(text: string): ReactNode[] {
+  return text.split(/(\*\*.*?\*\*)/g).map((part, i) =>
+    part.startsWith("**") && part.endsWith("**")
+      ? <strong key={i} className="font-semibold">{part.slice(2, -2)}</strong>
+      : part
+  );
+}
+
+function MessageContent({ text }: { text: string }) {
+  const lines = text.split("\n");
+  const nodes: ReactNode[] = [];
+  let listItems: ReactNode[] = [];
+
+  const flushList = () => {
+    if (listItems.length) {
+      nodes.push(<ul key={`ul-${nodes.length}`} className="mt-1 mb-1 space-y-0.5 pl-3">{listItems}</ul>);
+      listItems = [];
+    }
+  };
+
+  lines.forEach((line, i) => {
+    const isBullet = /^[*•\-]\s/.test(line);
+    if (isBullet) {
+      listItems.push(
+        <li key={i} className="flex gap-1.5 items-start">
+          <span className="mt-1.5 w-1 h-1 rounded-full bg-current flex-shrink-0 opacity-60" />
+          <span>{renderInline(line.replace(/^[*•\-]\s/, ""))}</span>
+        </li>
+      );
+    } else {
+      flushList();
+      if (line.trim()) {
+        nodes.push(<p key={i} className={nodes.length > 0 ? "mt-2" : ""}>{renderInline(line)}</p>);
+      }
+    }
+  });
+
+  flushList();
+  return <>{nodes}</>;
+}
 
 interface Message {
   role: "user" | "assistant";
@@ -157,7 +198,9 @@ export default function ChatWidget() {
                         : "bg-accent text-white rounded-tr-sm"
                     }`}
                   >
-                    {msg.content}
+                    {msg.role === "assistant"
+                      ? <MessageContent text={msg.content} />
+                      : msg.content}
                   </div>
                 </motion.div>
               ))}

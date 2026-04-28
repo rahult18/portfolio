@@ -45,7 +45,7 @@ export const experience = [
     title: "Software Engineer – GenAI Infra",
     company: "Apple Inc.",
     client: "Data Platform Efficiency",
-    location: "Tampa, FL",
+    location: "Dallas, TX",
     period: "Apr 2025 – Aug 2025",
     color: "#F0FDF4",
     tags: ["LangGraph", "NVIDIA Triton", "Apache Spark"],
@@ -77,6 +77,20 @@ export const experience = [
     tags: ["PyTorch", "Python", "Transformers"],
     highlights: [
       "Applied quantization and knowledge distillation to GPT models, reducing inference energy consumption by 20% without significant accuracy loss.",
+    ],
+  },
+  {
+    title: "Solutions Engineer",
+    company: "Swym Corporation",
+    location: "Bangalore, India",
+    period: "Sept 2022 – July 2023",
+    color: "#F0FDF4",
+    tags: ["REST APIs", "JavaScript", "E-commerce"],
+    highlights: [
+      "Engineered 30+ bespoke wishlist solutions for e-commerce stores using REST APIs, optimizing user journeys and aligning with diverse business requirements.",
+      "Built an internal knowledge base tool for the development and support teams, streamlining collaboration and reducing time spent on repetitive technical queries.",
+      "Resolved 8+ server-side caching issues by optimizing in-memory caching, improving API response times by 12% and enabling faster real-time updates.",
+      "Revamped external developer documentation with code recipes and API demos, driving a 10% increase in developer docs traffic.",
     ],
   },
 ];
@@ -148,6 +162,41 @@ export const projects = [
     tags: ["C++", "OpenMP", "MPI", "Cryptography"],
     github: "https://github.com/rahult18/Parallelisation-of-DES-Algorithm",
     featured: false,
+  },
+];
+
+export const blogs = [
+  {
+    title: "I Got Tired of Filling Out the Same Form 50 Times, So I Built an AI to Do It",
+    description:
+      "Built ApplyAI, a Chrome extension that automates job application form filling using a LangGraph agent and Gemini AI, cutting the process from 10 minutes to under 10 seconds.",
+    date: "Mar 6, 2025",
+    tags: ["AI Agents", "Automation", "Python", "LangGraph"],
+    url: "https://dev.to/rahul_talatala/i-got-tired-of-filling-out-the-same-form-50-times-so-i-built-an-ai-to-do-it-4jfj",
+  },
+  {
+    title: "AtmoFlow: Real-Time Weather and Air Quality Insights",
+    description:
+      "End-to-end data pipeline on GCP using Cloud Functions, Pub/Sub, Dataproc, and BigQuery to ingest, process, and visualize environmental data with Looker dashboards.",
+    date: "Jan 20, 2025",
+    tags: ["Data Engineering", "Google Cloud", "PySpark", "BigQuery"],
+    url: "https://dev.to/rahul_talatala/atmoflow-breathing-life-into-data-real-time-weather-and-air-quality-insights-5db0",
+  },
+  {
+    title: "Spring Commerce: Building a Resilient E-commerce System with Spring Boot Microservices",
+    description:
+      "A complete microservices e-commerce system with four core services communicating via REST and Kafka, secured with Keycloak, and monitored through the Grafana observability stack.",
+    date: "Mar 12, 2025",
+    tags: ["Spring Boot", "Microservices", "Kubernetes", "Kafka"],
+    url: "https://dev.to/rahul_talatala/spring-commerce-building-a-resilient-e-commerce-system-with-spring-boot-microservices-43ek",
+  },
+  {
+    title: "Spring Core Fundamentals: A Beginner Guide",
+    description:
+      "A practical guide to Spring's core concepts: dependency injection, inversion of control, bean management, and aspect-oriented programming for building maintainable Java apps.",
+    date: "Mar 12, 2025",
+    tags: ["Java", "Spring Boot", "Backend", "Dependency Injection"],
+    url: "https://dev.to/rahul_talatala/spring-core-fundamentals-a-beginner-guide-3daa",
   },
 ];
 
