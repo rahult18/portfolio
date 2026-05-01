@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight, ExternalLink, Star } from "lucide-react";
 import { GitHubIcon } from "./icons";
 import Link from "next/link";
 import AnimatedSection, { StaggerContainer, staggerItem } from "./AnimatedSection";
@@ -43,7 +43,7 @@ export default function FeaturedProjects() {
         </div>
 
         <StaggerContainer staggerDelay={0.12} containerDelay={0.1}>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+          <div className="grid sm:grid-cols-2 gap-5 sm:gap-6">
             {featured.map((project, i) => (
               <motion.article
                 key={project.name}
@@ -89,16 +89,30 @@ export default function FeaturedProjects() {
                     )}
                   </div>
 
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-muted hover:text-accent transition-colors duration-200"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <GitHubIcon size={14} />
-                    View on GitHub
-                  </a>
+                  <div className="flex items-center gap-3">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-muted hover:text-accent transition-colors duration-200"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <GitHubIcon size={14} />
+                      GitHub
+                    </a>
+                    {"liveUrl" in project && project.liveUrl && (
+                      <a
+                        href={project.liveUrl as string}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-blue-700 transition-colors duration-200"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <ExternalLink size={13} />
+                        Live
+                      </a>
+                    )}
+                  </div>
                 </div>
               </motion.article>
             ))}

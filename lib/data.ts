@@ -95,7 +95,37 @@ export const experience = [
   },
 ];
 
+export const products = [
+  {
+    name: "ApplyAI",
+    tagline: "Apply to jobs 10× faster.",
+    description:
+      "A full-stack job application assistant I built solo — Chrome extension, web dashboard, and AI backend. It autofills application forms using a LangGraph agent, tracks every application in one place, and scores your resume against each job posting.",
+    liveUrl: "https://apply-ai-extension.vercel.app/",
+    github: "https://github.com/rahult18/apply-ai-extension",
+    chromeStoreUrl:
+      "https://chromewebstore.google.com/detail/ApplyAI/ckknfphllkanlgikfaadoikjionkbmpf",
+    tags: ["LangGraph", "Gemini", "FastAPI", "Next.js", "Chrome Extension MV3", "Supabase"],
+    features: [
+      "LangGraph DAG agent autofills entire forms — dropdowns, React Select, and file uploads included",
+      "Resume-to-job match scoring with matched and missing keyword breakdown",
+      "Application tracking dashboard with status pipeline, KPI cards, and charts",
+      "Job board discovery across Lever, Ashby, and Greenhouse via SERP search",
+    ],
+    blog: "https://dev.to/rahul_talatala/i-got-tired-of-filling-out-the-same-form-50-times-so-i-built-an-ai-to-do-it-4jfj",
+  },
+];
+
 export const projects = [
+  {
+    name: "apply-ai-extension",
+    description:
+      "Full-stack job application assistant with a Chrome extension, LangGraph autofill agent, resume match scoring, and application tracking dashboard. Built solo and live on the Chrome Web Store.",
+    tags: ["LangGraph", "Gemini", "FastAPI", "Next.js", "Chrome Extension", "Supabase"],
+    github: "https://github.com/rahult18/apply-ai-extension",
+    liveUrl: "https://apply-ai-extension.vercel.app/",
+    featured: true,
+  },
   {
     name: "springcommerce",
     description:
