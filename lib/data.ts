@@ -121,6 +121,7 @@ export const products = [
       "An open-source CLI tool I built solo. After every git commit, it reads Claude Code session transcripts and git diffs, extracts structured knowledge as (subject, predicate, object) triples, links them by cosine similarity, auto-detects stale facts, and rewrites CLAUDE.md, .cursorrules, and AGENTS.md. In a 3-session demo, it compressed 411,463 bytes of raw transcripts into 11,707 characters of structured knowledge — a 35x reduction.",
     liveUrl: "https://pypi.org/project/prism-mem/",
     liveLabel: "PyPI",
+    pageUrl: "https://rahult.dev/prism",
     github: "https://github.com/rahult18/prism-mem",
     tags: ["kg-gen", "sentence-transformers", "numpy", "SQLite", "FastMCP", "FastAPI", "LiteLLM", "Python"],
     features: [

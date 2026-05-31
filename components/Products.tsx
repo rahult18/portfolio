@@ -117,6 +117,17 @@ export default function Products() {
                           <GitHubIcon size={14} />
                           GitHub
                         </a>
+                        {product.pageUrl && (
+                          <a
+                            href={product.pageUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="flex items-center justify-center gap-1.5 px-4 py-2.5 text-sm font-medium text-muted hover:text-accent border border-border hover:border-accent/30 rounded-lg transition-colors duration-200"
+                          >
+                            Learn more
+                            <ExternalLink size={11} />
+                          </a>
+                        )}
                         {product.blog && (
                           <a
                             href={product.blog}
