@@ -95,17 +95,19 @@ export default function Products() {
                           className="flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold text-white bg-accent hover:bg-blue-700 rounded-lg transition-colors duration-200"
                         >
                           <ExternalLink size={13} />
-                          Live App
+                          {product.liveLabel ?? "Live App"}
                         </a>
-                        <a
-                          href={product.chromeStoreUrl}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-gray-700 bg-white border border-border hover:bg-gray-50 rounded-lg transition-colors duration-200"
-                        >
-                          <ChromeIcon size={15} />
-                          Chrome Store
-                        </a>
+                        {product.chromeStoreUrl && (
+                          <a
+                            href={product.chromeStoreUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-gray-700 bg-white border border-border hover:bg-gray-50 rounded-lg transition-colors duration-200"
+                          >
+                            <ChromeIcon size={15} />
+                            Chrome Store
+                          </a>
+                        )}
                         <a
                           href={product.github}
                           target="_blank"
