@@ -252,14 +252,12 @@ export const education = [
     school: "University at Buffalo",
     location: "Buffalo, NY",
     gpa: "3.8 / 4.0",
-    period: "2023 – 2025",
   },
   {
     degree: "BTech, Computer Science",
     school: "Vellore Institute of Technology",
     location: "Vellore, India",
     gpa: "3.9 / 4.0",
-    period: "2019 – 2023",
   },
 ];
 

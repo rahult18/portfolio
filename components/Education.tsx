@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, MapPin, Calendar } from "lucide-react";
+import { GraduationCap, MapPin } from "lucide-react";
 import AnimatedSection, { StaggerContainer, staggerItem } from "./AnimatedSection";
 import { education } from "@/lib/data";
 
@@ -40,10 +40,6 @@ export default function Education() {
                   <span className="flex items-center gap-1">
                     <MapPin size={11} />
                     {edu.location}
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Calendar size={11} />
-                    {edu.period}
                   </span>
                 </div>
                 <div className="mt-4 pt-4 border-t border-border">
