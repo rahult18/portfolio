@@ -192,6 +192,27 @@ export default function PrismPage() {
           </div>
         </motion.div>
 
+        {/* Demo video */}
+        <AnimatedSection className="mb-24">
+          <div className="mb-8">
+            <span className="text-xs font-semibold uppercase tracking-widest text-accent mb-3 block">
+              Demo
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
+              See it in action
+            </h2>
+          </div>
+          <div className="relative w-full rounded-2xl overflow-hidden border border-border shadow-lg" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/b3jWN1cnlEE"
+              title="prism-mem demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </AnimatedSection>
+
         {/* Problem */}
         <AnimatedSection className="mb-24">
           <div className="mb-8">
@@ -435,7 +456,7 @@ export default function PrismPage() {
               PyPI
             </a>
             <a
-              href="https://github.com/rahult18/prism-mem/blob/main/blog.md"
+              href="https://dev.to/rahul_talatala/prism-mem-automatic-knowledge-extraction-for-ai-coding-agents-2bgo"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm text-muted hover:text-accent transition-colors duration-200"

@@ -97,6 +97,24 @@ export const experience = [
 
 export const products = [
   {
+    name: "prism-mem",
+    tagline: "Post-session memory for AI coding agents.",
+    description:
+      "An open-source CLI tool I built solo. After every git commit, it reads Claude Code session transcripts and git diffs, extracts structured knowledge as (subject, predicate, object) triples, links them by cosine similarity, auto-detects stale facts, and rewrites CLAUDE.md, .cursorrules, and AGENTS.md. In a 3-session demo, it compressed 411,463 bytes of raw transcripts into 11,707 characters of structured knowledge — a 35x reduction.",
+    liveUrl: "https://pypi.org/project/prism-mem/",
+    liveLabel: "PyPI",
+    pageUrl: "https://rahult.dev/prism",
+    github: "https://github.com/rahult18/prism-mem",
+    blog: "https://dev.to/rahul_talatala/prism-mem-automatic-knowledge-extraction-for-ai-coding-agents-2bgo",
+    tags: ["kg-gen", "sentence-transformers", "numpy", "SQLite", "FastMCP", "FastAPI", "LiteLLM", "Python"],
+    features: [
+      "Extracts (subject, predicate, object) triples from Claude Code session transcripts and git diffs via kg-gen and an LLM",
+      "Links related triples by cosine similarity and marks contradicted facts stale automatically — no manual input",
+      "Rewrites CLAUDE.md, .cursorrules, and AGENTS.md after every git commit via a post-commit hook",
+      "MCP server exposes get_context, query_knowledge, and crystallize tools to Claude Code, Cursor, and Codex",
+    ],
+  },
+  {
     name: "ApplyAI",
     tagline: "Apply to jobs 10× faster.",
     description:
@@ -113,23 +131,6 @@ export const products = [
       "Job board discovery across Lever, Ashby, and Greenhouse via SERP search",
     ],
     blog: "https://dev.to/rahul_talatala/i-got-tired-of-filling-out-the-same-form-50-times-so-i-built-an-ai-to-do-it-4jfj",
-  },
-  {
-    name: "prism-mem",
-    tagline: "Post-session memory for AI coding agents.",
-    description:
-      "An open-source CLI tool I built solo. After every git commit, it reads Claude Code session transcripts and git diffs, extracts structured knowledge as (subject, predicate, object) triples, links them by cosine similarity, auto-detects stale facts, and rewrites CLAUDE.md, .cursorrules, and AGENTS.md. In a 3-session demo, it compressed 411,463 bytes of raw transcripts into 11,707 characters of structured knowledge — a 35x reduction.",
-    liveUrl: "https://pypi.org/project/prism-mem/",
-    liveLabel: "PyPI",
-    pageUrl: "https://rahult.dev/prism",
-    github: "https://github.com/rahult18/prism-mem",
-    tags: ["kg-gen", "sentence-transformers", "numpy", "SQLite", "FastMCP", "FastAPI", "LiteLLM", "Python"],
-    features: [
-      "Extracts (subject, predicate, object) triples from Claude Code session transcripts and git diffs via kg-gen and an LLM",
-      "Links related triples by cosine similarity and marks contradicted facts stale automatically — no manual input",
-      "Rewrites CLAUDE.md, .cursorrules, and AGENTS.md after every git commit via a post-commit hook",
-      "MCP server exposes get_context, query_knowledge, and crystallize tools to Claude Code, Cursor, and Codex",
-    ],
   },
 ];
 
@@ -213,6 +214,14 @@ export const projects = [
 ];
 
 export const blogs = [
+  {
+    title: "prism-mem: Automatic Knowledge Extraction for AI Coding Agents",
+    description:
+      "Built prism-mem, an open-source CLI that reads Claude Code session transcripts and git diffs after every commit, extracts (subject, predicate, object) triples via kg-gen, links them by cosine similarity, auto-detects stale facts, and rewrites CLAUDE.md automatically — no manual context updates needed.",
+    date: "May 31, 2026",
+    tags: ["AI Agents", "Knowledge Graph", "Python", "MCP"],
+    url: "https://dev.to/rahul_talatala/prism-mem-automatic-knowledge-extraction-for-ai-coding-agents-2bgo",
+  },
   {
     title: "I Got Tired of Filling Out the Same Form 50 Times, So I Built an AI to Do It",
     description:
