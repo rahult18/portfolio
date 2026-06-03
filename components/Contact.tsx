@@ -103,7 +103,7 @@ export default function Contact() {
               © {new Date().getFullYear()} Rahul Reddy Talatala.
             </p>
             <p className="text-xs text-muted">
-              Tampa, FL · Open to relocation
+              United States
             </p>
           </div>
         </AnimatedSection>

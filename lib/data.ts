@@ -42,7 +42,7 @@ export const experience = [
     ],
   },
   {
-    title: "Software Engineer – GenAI Infra",
+    title: "MLOps Engineer",
     company: "Apple Inc.",
     client: "Data Platform Efficiency",
     location: "Dallas, TX",
@@ -83,7 +83,7 @@ export const experience = [
     title: "Solutions Engineer",
     company: "Swym Corporation",
     location: "Bangalore, India",
-    period: "Sept 2022 – July 2023",
+    period: "Aug 2022 – July 2023",
     color: "#F0FDF4",
     tags: ["REST APIs", "JavaScript", "E-commerce"],
     highlights: [
@@ -266,7 +266,7 @@ export const education = [
   {
     degree: "BTech, Computer Science",
     school: "Vellore Institute of Technology",
-    location: "Vellore, India",
+    location: "Chennai, India",
     gpa: "3.9 / 4.0",
   },
 ];
@@ -303,7 +303,7 @@ SKILLS: LangGraph, LangChain, CrewAI, Autogen, PyTorch, TensorFlow, Google ADK, 
 
 EXPERIENCE:
 1. GenAI Engineer @ Infinite Computer Solutions (Client: Verizon) — Aug 2025–Present, Tampa FL
-2. Software Engineer – GenAI Infra @ Apple Inc. — Apr 2025–Aug 2025, Tampa FL
+2. MLOps Engineer @ Apple Inc. — Apr 2025–Aug 2025, Dallas TX
 3. Software Engineer @ Eminent Services Corporation — May 2024–Apr 2025, Frederick MD
 4. ML Research Assistant @ University at Buffalo — Jan 2024–May 2024, Buffalo NY
 
