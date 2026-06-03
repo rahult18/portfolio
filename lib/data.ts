@@ -42,7 +42,7 @@ export const experience = [
     ],
   },
   {
-    title: "MLOps Engineer",
+    title: "MLOps Engineer (Contract)",
     company: "Apple Inc.",
     client: "Data Platform Efficiency",
     location: "Dallas, TX",
@@ -303,7 +303,7 @@ SKILLS: LangGraph, LangChain, CrewAI, Autogen, PyTorch, TensorFlow, Google ADK, 
 
 EXPERIENCE:
 1. GenAI Engineer @ Infinite Computer Solutions (Client: Verizon) — Aug 2025–Present, Tampa FL
-2. MLOps Engineer @ Apple Inc. — Apr 2025–Aug 2025, Dallas TX
+2. MLOps Engineer (Contract) @ Apple Inc. — Apr 2025–Aug 2025, Dallas TX
 3. Software & AI Engineer @ Eminent Services Corporation — May 2024–Apr 2025, Frederick MD
 4. ML Research Assistant @ University at Buffalo — Jan 2024–May 2024, Buffalo NY
 
