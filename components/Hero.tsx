@@ -152,7 +152,7 @@ export default function Hero() {
               className="grid grid-cols-3 gap-2 sm:gap-4 w-full max-w-sm lg:max-w-none"
             >
               {[
-                { value: 60, suffix: "%", label: "Triage\nautomated" },
+                { value: 114, prefix: "$", suffix: "M+", label: "Overcharge\nexposure" },
                 { value: 2.46, prefix: "$", suffix: "M", label: "Cost\navoidance", decimals: 2 },
                 { value: 35, suffix: "%", label: "Debug time\nreduced" },
               ].map((stat, i) => (

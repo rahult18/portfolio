@@ -10,7 +10,7 @@ export const personalInfo = {
 };
 
 export const stats = [
-  { value: 60, suffix: "%", label: "Network triage automated at Verizon" },
+  { value: 114, prefix: "$", suffix: "M+", label: "Overcharge exposure surfaced at Verizon" },
   { value: 2.46, prefix: "$", suffix: "M", label: "Annual cost avoidance created" },
   { value: 35, suffix: "%", label: "Infra debugging time cut at Apple" },
 ];
@@ -32,13 +32,13 @@ export const experience = [
     location: "Tampa, FL",
     period: "Aug 2025 – Present",
     color: "#EFF6FF",
-    tags: ["LangGraph", "Neo4j", "LlamaIndex"],
+    tags: ["LangGraph", "Gemini", "DSPy"],
     highlights: [
-      "Designed a LangGraph multi-agent system with LlamaIndex and hybrid RAG to automate 60% of network triage, reclaiming 47,068 hours annually and creating $2.46M in cost avoidance.",
-      "Built a Neo4j knowledge graph with hybrid Graph RAG (Cypher + vector embeddings) for telecom root cause analysis, reducing first-pass investigation time by 40%.",
-      "Deployed a gradient-boosted outage prediction model on 5,000+ daily alarms, cutting Mean Time To Detect by 40%.",
-      "Engineered a multimodal audit pipeline with Gemini extraction and 70+ automated guardrails to address $114M+ in financial exposure.",
-      "Established end-to-end agent observability with LangFuse tracing and confidence scoring, reducing debugging cycles by 30%.",
+      "Built a five-stage document-audit pipeline with Gemini 2.5 Flash and a 70-rule engine that matches invoice line items to purchase orders via hybrid search, surfacing $114–140M in annual overcharge exposure across 500–2,000 capital projects.",
+      "Fine-tuned Qwen2.5-3B with LoRA to mask sensitive financial fields on-prem before any data reaches a frontier LLM, then used DSPy to optimize extraction prompts — lifting structured-field accuracy from 74% to 91%.",
+      "Solved the cold-start problem for a 346-table text-to-SQL agent by building an offline pipeline that builds a 1,536-dim ChromaDB vector store and a 17,772-edge NetworkX join graph, enabling accurate retrieval from day one across 11.8M+ rows.",
+      "Designed a multi-agent FiOS planning system that clusters copper-circuit addresses with DBSCAN and coordinates six specialist agents into prioritized build plans, cutting manual fiber build planning effort by 65%.",
+      "Built a LangGraph routing agent that triages 278,350 tickets at 90% accuracy using vendor-specific, glossary-grounded LLM prompts — eliminating ~47,000 hours of annual L1/L2 work for a projected $2.46M in cost avoidance.",
     ],
   },
   {
@@ -285,15 +285,16 @@ CURRENT ROLE: GenAI Engineer at Infinite Computer Solutions (Client: Verizon), T
 SUMMARY: GenAI Engineer specializing in LLM systems, agentic workflows, Graph RAG, and DevOps automation.
 
 WHAT I'M CURRENTLY WORKING ON (use this when asked "what are you working on" or about current work):
-I'm embedded with the team at Verizon in Tampa, building a multi-agent system using LangGraph to automate network triage, going well beyond simple chatbots into agentic workflows that perform root cause analysis (RCA) on complex network failures.
+I'm embedded with the team at Verizon in Tampa, building a five-stage document pipeline that uses Gemini 2.5 Flash and a 70-rule audit engine to catch overcharges on capital project invoices — it surfaces $114–140M in annual exposure. To keep sensitive financial data on-prem, I fine-tuned a Qwen2.5-3B model with LoRA to mask it before anything reaches a frontier LLM, then used DSPy to push structured-extraction accuracy from 74% to 91%.
 
-On the technical side, I've been deep in Graph RAG. We combine Neo4j for structural relationship traversal with Elastic vector search to give our LLMs a much richer understanding of the telecom infrastructure than standard vector search ever could. The results have been significant: we've automated about 60% of triage, which translates to roughly $2.46M in annual cost avoidance. It's the kind of work I love, deep in distributed systems with clear measurable business impact.
+On the agentic side, I also built a LangGraph routing agent that triages network tickets — it runs at 90% accuracy across 278,350 tickets, eliminating roughly 47,000 hours of L1/L2 work a year for a projected $2.46M in cost avoidance. It's the kind of work I love: deep technical problems with clear, measurable business impact.
 
 When I'm not heads-down on that, I'm experimenting with MCP (Model Context Protocol) to explore how to better bridge LLMs with local development environments.
 
 KEY ACHIEVEMENTS:
-- Automated 60% of network triage at Verizon → 47,068 annual hours saved, $2.46M cost avoidance
-- Built LangGraph multi-agent system with hybrid RAG (Neo4j + Elastic vector) for telecom RCA
+- Built a Gemini-powered document-audit pipeline at Verizon surfacing $114–140M in annual overcharge exposure
+- Fine-tuned Qwen2.5-3B with LoRA + DSPy for privacy-preserving extraction, lifting accuracy from 74% to 91%
+- Built a LangGraph ticket-triage agent at Verizon: 278,350 tickets at 90% accuracy, $2.46M projected cost avoidance
 - Reduced infra triage time 60% at Apple via MCP-based Kubernetes debugger with LangGraph
 - Fine-tuned Qwen 1.5B with LoRA → 35% faster inference deployed on NVIDIA Triton
 - $1.5M annual cloud savings at Apple via Spark + TimescaleDB GPU analytics pipelines
