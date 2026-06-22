@@ -83,7 +83,7 @@ export const experience = [
     title: "Solutions Engineer",
     company: "Swym Corporation",
     location: "Bangalore, India",
-    period: "Aug 2022 – Aug 2023",
+    period: "Aug 2021 – Aug 2023",
     color: "#F0FDF4",
     tags: ["REST APIs", "JavaScript", "E-commerce"],
     highlights: [
